@@ -1,0 +1,245 @@
+/* Typography */
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/muli/Muli-Regular.woff2'),
+    url('./assets/fonts/muli/Muli-Regular.woff'),
+    url('./assets/fonts/muli/Muli-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./assets/fonts/muli/Muli-Bold.woff2'),
+    url('./assets/fonts/muli/Muli-Bold.woff'),
+    url('./assets/fonts/muli/Muli-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 900;
+  src: url('./assets/fonts/muli/Muli-Black.woff2'),
+    url('./assets/fonts/muli/Muli-Black.woff'),
+    url('./assets/fonts/muli/Muli-Black.ttf');
+}
+
+@font-face {
+  font-family: 'Yeseva One';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/yeseva-one/YesevaOne-Regular.woff2'),
+    url('./assets/fonts/yeseva-one/YesevaOne-Regular.woff'),
+    url('./assets/fonts/yeseva-one/YesevaOne-Regular.ttf');
+}
+
+:root {
+  /* Colorbook */
+  --color-charcoal-011: #161c24;
+  --color-charcoal-021: #283342;
+  --color-charcoal-046: #73767a;
+  --color-white: #fff;
+  --color-alarm-049: #ec110d;
+  --color-alarm-039: #bd0e0a;
+  --color-slate-blue-050: #4878b8;
+
+  /* Spacing */
+  --space-eighth: 0.2rem;
+  --space-quarter: 0.4rem;
+  --space-half: 0.8rem;
+  --space-default: 1.6rem;
+  --space-double: 3.2rem;
+  --space-quad: 6.4rem;
+  --space-oct: 12.8rem;
+
+  /* Typography */
+  --font-family-sans: 'Muli', sans-serif;
+  --font-family-serif: 'Yeseva One', serif;
+
+  /* Font Weights */
+  --weight-regular: 400;
+  --weight-bold: 700;
+  --weight-black: 900;
+
+  /* Design elements */
+  --transition: 300ms ease-in-out;
+  --border-radius-default: 0.4rem;
+  --border-radius-large: 0.8rem;
+}
+
+/* Reset */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-sans);
+  font-size: 1.6rem;
+  background-color: var(--color-white);
+}
+
+/* Type Specs */
+.t-brand {
+  font-family: var(--font-family-sans);
+  font-size: 2.4rem;
+  font-weight: var(--weight-black);
+  line-height: 1;
+}
+
+.t-copy-large {
+  font-family: var(--font-family-sans);
+  font-size: 1.6rem;
+  font-weight: var(--weight-bold);
+  line-height: 1;
+}
+
+.t-link {
+  font-family: var(--font-family-sans);
+  font-size: 1.6rem;
+  font-weight: var(--weight-bold);
+  line-height: 1;
+  color: var(--color-charcoal-021);
+  transition: var(--transition) color, var(--transition) outline-color;
+  outline: 0.4rem solid transparent;
+  outline-offset: 0.2rem;
+}
+.t-link:hover {
+  color: var(--color-charcoal-046);
+}
+.t-link:focus {
+  outline-color: var(--color-slate-blue-050);
+}
+
+.t-display {
+  font-family: var(--font-family-serif);
+  letter-spacing: -0.2rem;
+}
+@media (max-width: 575px) {
+  .t-display {
+    font-size: 3.2rem;
+    line-height: 1.25;
+  }
+}
+@media (min-width: 576px) and (max-width: 1703px) {
+  .t-display {
+    font-size: 5.6rem;
+    line-height: 1.143;
+  }
+}
+@media (min-width: 1704px) {
+  .t-display {
+    font-size: 8rem;
+    line-height: 1.2;
+  }
+}
+
+.t-body {
+  font-family: var(--font-family-sans);
+  font-size: 1.4rem;
+  font-weight: var(--weight-regular);
+  line-height: 1.286;
+}
+
+.t-title {
+  font-family: var(--font-family-sans);
+  font-weight: var(--weight-black);
+}
+@media (max-width: 1199px) {
+  .t-title {
+    font-size: 2.4rem;
+    line-height: 1.167;
+  }
+}
+@media (min-width: 1200px) {
+  .t-title {
+    font-size: 2.8rem;
+    line-height: 1.143;
+  }
+}
+
+.t-section-number {
+  font-family: var(--font-family-serif);
+  font-size: 12rem;
+  line-height: 1;
+  letter-spacing: -0.2rem;
+}
+
+.t-copy-fluid {
+  font-family: var(--font-family-sans);
+  font-weight: var(--weight-bold);
+  line-height: 1;
+}
+@media (max-width: 575px) {
+  .t-copy-fluid {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 576px) {
+  .t-copy-fluid {
+    font-size: 1.6rem;
+  }
+}
+
+/* Screen Reader Only */
+.screen-reader-only {
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(0px 0px 99.9% 99.9%);
+  overflow: hidden;
+  border: 0;
+}
+
+/* Skip Nav */
+.skip-nav {
+  padding: var(--space-default);
+  display: inline-block;
+  position: absolute;
+  color: var(--color-white);
+  background-color: var(--color-charcoal-021);
+  border-radius: var(--border-radius-default);
+  text-decoration: none;
+  transition: var(--transition) background-color, var(--transition) transform, var(--transition) outline-color;
+  outline: 0.4rem solid transparent;
+  outline-offset: 0.2rem;
+}
+@media (max-width: 1024px) {
+  .skip-nav {
+    transform: translate(var(--space-default), calc(var(--space-quad) * -1));
+  }
+}
+@media (min-width: 1025px) {
+  .skip-nav {
+    transform: translate(var(--space-oct), calc(var(--space-quad) * -1));
+  }
+}
+.skip-nav:hover {
+  background-color: var(--color-charcoal-011);
+}
+.skip-nav:focus {
+  outline-color: var(--color-slate-blue-050);
+}
+@media (max-width: 1024px) {
+  .skip-nav:focus {
+    transform: translate(var(--space-default), var(--space-default));
+  }
+}
+@media (min-width: 1025px) {
+  .skip-nav:focus {
+    transform: translate(var(--space-oct), var(--space-double));
+  }
+}
