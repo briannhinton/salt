@@ -58,7 +58,7 @@ To get started follow these simple example steps.
    <link rel="stylesheet" src="styles.css">
    ```
 
-<p align="center">(<a href="#top">back to top</a>)</p>
+<p align="left">(<a href="#top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -94,7 +94,7 @@ The advantage of a simple starter is that it's all about mixing in your own styl
 
 Then you can keep adding, and growing when you see patterns emerge.
 
-<p align="center">(<a href="#top">back to top</a>)</p>
+<p align="left">(<a href="#top">back to top</a>)</p>
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -104,7 +104,7 @@ Then you can keep adding, and growing when you see patterns emerge.
 
 See the [open issues](https://github.com/mrbrianhinton/css-starter/issues) for a full list of proposed features (and known issues).
 
-<p align="center">(<a href="#top">back to top</a>)</p>
+<p align="left">(<a href="#top">back to top</a>)</p>
 
 
 <!-- CONTRIBUTING -->
@@ -121,7 +121,7 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="center">(<a href="#top">back to top</a>)</p>
+<p align="left">(<a href="#top">back to top</a>)</p>
 
 
 <!-- LICENSE -->
@@ -129,7 +129,7 @@ Don't forget to give the project a star! Thanks again!
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-<p align="center">(<a href="#top">back to top</a>)</p>
+<p align="left">(<a href="#top">back to top</a>)</p>
 
 
 <!-- CONTACT -->
@@ -137,4 +137,4 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Brian Hinton - [@RealTinyPenguin](https://twitter.com/RealTinyPenguin)
 
-<p align="center">(<a href="#top">back to top</a>)</p>
+<p align="left">(<a href="#top">back to top</a>)</p>
