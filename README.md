@@ -27,13 +27,11 @@
 
 This is an opinionated, and simple starter CSS file to use an alternative to a large framework.
 
-<p align="center">(<a href="#top">back to top</a>)</p>
 
 ### Built With
 
 * [Code](https://code.visualstudio.com)
 
-<p align="center">(<a href="#top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## Getting Started
