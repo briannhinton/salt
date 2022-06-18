@@ -1,38 +1,17 @@
 /* Typography */
 @font-face {
-  font-family: 'Muli';
+  font-family: 'Manrope';
+  src: url('./assets/fonts/Manrope[wght].woff2') format('woff2-variations');
+  font-weight: 200 800;
   font-style: normal;
-  font-weight: 400;
-  src: url('./assets/fonts/muli/Muli-Regular.woff2'),
-    url('./assets/fonts/muli/Muli-Regular.woff'),
-    url('./assets/fonts/muli/Muli-Regular.ttf');
 }
 
 @font-face {
-  font-family: 'Muli';
+  font-family: 'Newsreader';
+  src: url('./assets/fonts/Newsreader-VariableFont_opsz\,wght.ttf') format('woff2-variations');
+  font-weight: 200 800;
+  font-optical-sizing: auto;
   font-style: normal;
-  font-weight: 700;
-  src: url('./assets/fonts/muli/Muli-Bold.woff2'),
-    url('./assets/fonts/muli/Muli-Bold.woff'),
-    url('./assets/fonts/muli/Muli-Bold.ttf');
-}
-
-@font-face {
-  font-family: 'Muli';
-  font-style: normal;
-  font-weight: 900;
-  src: url('./assets/fonts/muli/Muli-Black.woff2'),
-    url('./assets/fonts/muli/Muli-Black.woff'),
-    url('./assets/fonts/muli/Muli-Black.ttf');
-}
-
-@font-face {
-  font-family: 'Yeseva One';
-  font-style: normal;
-  font-weight: 400;
-  src: url('./assets/fonts/yeseva-one/YesevaOne-Regular.woff2'),
-    url('./assets/fonts/yeseva-one/YesevaOne-Regular.woff'),
-    url('./assets/fonts/yeseva-one/YesevaOne-Regular.ttf');
 }
 
 :root {
@@ -40,7 +19,7 @@
   --color-charcoal-011: #161c24;
   --color-charcoal-021: #283342;
   --color-charcoal-046: #73767a;
-  --color-white: #fff;
+  --color-white: #e8f8ff;
   --color-alarm-049: #ec110d;
   --color-alarm-039: #bd0e0a;
   --color-slate-blue-050: #4878b8;
@@ -56,12 +35,13 @@
 
   /* Typography */
   --font-family-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  --font-family-serif: 'Yeseva One', serif;
+  --font-family-serif: 'Newsreader', serif;
 
   /* Font Weights */
+  --weight-light: 200;
   --weight-regular: 400;
-  --weight-bold: 700;
-  --weight-black: 900;
+  --weight-bold: 600;
+  --weight-black: 800;
 
   /* Design elements */
   --transition: 300ms ease-in-out;
@@ -85,28 +65,28 @@ html, body {
 
 body {
   margin: 0;
-  font-family: Inter, var(--font-family-sans);
+  font-family: 'Manrope', var(--font-family-sans);
   font-size: 1.6rem;
   background-color: var(--color-white);
 }
 
 /* Type Specs */
 .t-brand {
-  font-family: var(--font-family-sans);
+  font-family: 'Manrope', var(--font-family-sans);
   font-size: 2.4rem;
   font-weight: var(--weight-black);
   line-height: 1;
 }
 
 .t-copy-large {
-  font-family: var(--font-family-sans);
+  font-family: 'Manrope', var(--font-family-sans);
   font-size: 1.6rem;
   font-weight: var(--weight-bold);
   line-height: 1;
 }
 
 .t-link {
-  font-family: var(--font-family-sans);
+  font-family: 'Manrope', var(--font-family-sans);
   font-size: 1.6rem;
   font-weight: var(--weight-bold);
   line-height: 1;
@@ -146,7 +126,7 @@ body {
 }
 
 .t-body {
-  font-family: var(--font-family-sans);
+  font-family: 'Manrope', var(--font-family-sans);
   font-size: 1.4rem;
   font-weight: var(--weight-regular);
   line-height: 1.286;
@@ -177,7 +157,7 @@ body {
 }
 
 .t-copy-fluid {
-  font-family: var(--font-family-sans);
+  font-family: 'Manrope', var(--font-family-sans);
   font-weight: var(--weight-bold);
   line-height: 1;
 }
