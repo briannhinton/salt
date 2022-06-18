@@ -100,7 +100,7 @@ Then you can keep adding, and growing when you see patterns emerge.
 ## Roadmap
 
 - [ ] Clean up default fonts, and set a new opinionated default font
-- [ ] Add more helpers for Flex and Grid
+- [ ] Add helpers for Flex and Grid
 
 See the [open issues](https://github.com/mrbrianhinton/css-starter/issues) for a full list of proposed features (and known issues).
 
