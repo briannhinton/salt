@@ -55,7 +55,7 @@
   --space-oct: 12.8rem;
 
   /* Typography */
-  --font-family-sans: 'Muli', sans-serif;
+  --font-family-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   --font-family-serif: 'Yeseva One', serif;
 
   /* Font Weights */
@@ -85,7 +85,7 @@ html, body {
 
 body {
   margin: 0;
-  font-family: var(--font-family-sans);
+  font-family: Inter, var(--font-family-sans);
   font-size: 1.6rem;
   background-color: var(--color-white);
 }
