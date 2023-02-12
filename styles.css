@@ -18,7 +18,7 @@
   /* Colorbook */
   --color-charcoal-011: #161c24;
   --color-charcoal-021: #283342;
-  --color-charcoal-046: #73767a;
+  --color-charcoal-041: #73767a;
   --color-white: #e8f8ff;
   --color-alarm-049: #ec110d;
   --color-alarm-039: #bd0e0a;
@@ -34,14 +34,14 @@
   --space-oct: 12.8rem;
 
   /* Typography */
-  --font-family-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-family-sans: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   --font-family-serif: 'Newsreader', serif;
 
   /* Font Weights */
   --weight-light: 200;
   --weight-regular: 400;
-  --weight-bold: 600;
-  --weight-black: 800;
+  --weight-semibold: 600;
+  --weight-extrabold: 800;
 
   /* Design elements */
   --transition: 300ms ease-in-out;
@@ -65,28 +65,28 @@ html, body {
 
 body {
   margin: 0;
-  font-family: 'Manrope', var(--font-family-sans);
+  font-family: var(--font-family-sans);
   font-size: 1.6rem;
   background-color: var(--color-white);
 }
 
 /* Type Specs */
 .t-brand {
-  font-family: 'Manrope', var(--font-family-sans);
+  font-family: var(--font-family-sans);
   font-size: 2.4rem;
-  font-weight: var(--weight-black);
+  font-weight: var(--weight-extrabold);
   line-height: 1;
 }
 
 .t-copy-large {
-  font-family: 'Manrope', var(--font-family-sans);
+  font-family: var(--font-family-sans);
   font-size: 1.6rem;
-  font-weight: var(--weight-bold);
+  font-weight: var(--weight-semibold);
   line-height: 1;
 }
 
 .t-link {
-  font-family: 'Manrope', var(--font-family-sans);
+  font-family: var(--font-family-sans);
   font-size: 1.6rem;
   font-weight: var(--weight-bold);
   line-height: 1;
@@ -126,8 +126,8 @@ body {
 }
 
 .t-body {
-  font-family: 'Manrope', var(--font-family-sans);
-  font-size: 1.4rem;
+  font-family: var(--font-family-sans);
+  font-size: 1.6rem;
   font-weight: var(--weight-regular);
   line-height: 1.286;
 }
